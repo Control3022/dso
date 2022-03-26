@@ -21,6 +21,7 @@ def do(fghfg):
             if 'STOP21' not in url:
                 header = {'User-Agent':str(random.choice(user_agent_list))}
                 htmlContent = requests.get(url, headers=header)
+                print(htmlContent)
         except:
             pass
 
