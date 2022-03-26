@@ -28,7 +28,7 @@ import threading
 import time
 
 threads=list()
-for _ in range(20):
+for _ in range(50):
     td=threading.Thread(target=do, args=(2,))
     td.start()
     threads.append(td)
