@@ -20,7 +20,6 @@ def do(fghfg):
             if 'STOP21' not in url:
                 header = {'User-Agent':str(random.choice(user_agent_list))}
                 htmlContent = requests.get(url, headers=header)
-                print(htmlContent)
         except:
             pass
 
@@ -28,7 +27,7 @@ import threading
 import time
 
 threads=list()
-for _ in range(50):
+for _ in range(20):
     td=threading.Thread(target=do, args=(2,))
     td.start()
     threads.append(td)
